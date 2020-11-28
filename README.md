@@ -9,6 +9,9 @@ Testing mysql2 library
 ### How to develop
 
 ```
+# Start MySQL server in background.
+docker-compose up -d
+
 # Install dependencies
 npm i
 
