@@ -1,0 +1,19 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8.0.18
+    command: --bind-address=0.0.0.0 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - "3306:3306"
+    # https://github.com/docker-library/mysql/issues/82
+    environment:
+      - MYSQL_HOST=
+      - MYSQL_USER=
+      - MYSQL_PASSWORD=
+      - MYSQL_ROOT_HOST=%
+      - MYSQL_DATABASE=mysql_local
+      - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - mysql:/var/lib/mysql
+volumes:
+  mysql:

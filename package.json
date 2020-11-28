@@ -1,0 +1,27 @@
+{
+  "name": "play-with-mysql2",
+  "version": "1.0.0",
+  "description": "Testing mysql2 library",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subuta/play-with-mysql2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subuta/play-with-mysql2/issues"
+  },
+  "homepage": "https://github.com/subuta/play-with-mysql2#readme",
+  "dependencies": {
+    "microbundle": "^0.12.4",
+    "mysql2": "^2.2.5"
+  }
+}
